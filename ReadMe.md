@@ -1,6 +1,6 @@
 # MockMate
 
-🚀 Live Demo: (https://mockmate-demo.vercel.app/)
+🚀 Live Demo: ([https://mockmate-demo.vercel.app/](https://mock-mate-blush-eight.vercel.app/))
 
 A comprehensive, full-stack real-time collaborative platform designed to simulate technical engineering interviews. Built using the MERN stack, Socket.IO, and WebRTC, MockMate allows interviewers and candidates to write code simultaneously, communicate via live peer-to-peer video, chat in real-time, and share resumes within a single synchronized workspace.
 

@@ -11,8 +11,9 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     // Connect to your Node.js backend server
-    const newSocket = io('http://localhost:5000', {
-      autoConnect: true,
+    const newSocket = io('https://mockmate-podq.onrender.com', {
+      withCredentials: true,
+      transports: ['websocket'], // This skips polling and forces a direct connection!
     });
 
     setSocket(newSocket);

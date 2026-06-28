@@ -17,7 +17,7 @@ function Auth() {
     const payload = isLogin ? { email, password } : { name, email, password };
     
     try {
-      const response = await fetch(`http://mockmate-podq.onrender.com${endpoint}`, {
+      const response = await fetch(`https://mockmate-podq.onrender.com${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

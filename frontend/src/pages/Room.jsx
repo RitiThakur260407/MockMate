@@ -22,7 +22,7 @@ function Room() {
   useEffect(() => {
     if (!socket) return;
 
-    fetch(`http://localhost:5000/api/chat/${roomId}`)
+    fetch(`http://mockmate-podq.onrender.com/api/chat/${roomId}`)
       .then(res => res.json())
       .then(data => {
         const formatted = data.map(m => ({ text: `History: ${m.text}`, isSystem: false }));
@@ -143,7 +143,7 @@ function Room() {
     formData.append('resume', file);
     
     try {
-      const res = await fetch('http://localhost:5000/api/upload', {
+      const res = await fetch('http://mockmate-podq.onrender.com/api/upload', {
         method: 'POST',
         body: formData
       });
